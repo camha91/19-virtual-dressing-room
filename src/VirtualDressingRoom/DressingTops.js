@@ -4,7 +4,6 @@ import dataDressing from "../Data/Data.json";
 export default function DressingTops() {
   const renderTops = () => {
     return dataDressing.tabPanes[0].tops.map((top, index) => {
-      console.log(dataDressing.tabPanes);
       return (
         <div key={index} className="col-md-4">
           <div className="card text-center">

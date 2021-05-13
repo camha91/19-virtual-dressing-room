@@ -1,66 +1,25 @@
 import React from "react";
+import dataDressing from "../Data/Data.json";
 
 export default function DressingNecklaces() {
-  return (
-    <div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
+  const renderNecklaces = () => {
+    return dataDressing.tabPanes[4].necklaces.map((necklace, index) => {
+      return (
+        <div key={index} className="col-md-4">
+          <div className="card text-center">
+            <img src={necklace.imgSrc_jpg} alt={necklace.imgSrc_jpg} />
+            <h4>
+              <b>{necklace.desc}</b>
+            </h4>
+            <button>Try on</button>
           </div>
         </div>
-      </div>
+      );
+    });
+  };
+  return (
+    <div className="container">
+      <div className="row">{renderNecklaces()}</div>
     </div>
   );
 }

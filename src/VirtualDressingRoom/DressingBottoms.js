@@ -1,66 +1,26 @@
 import React from "react";
+import dataDressing from "../Data/Data.json";
 
 export default function DressingBottoms() {
-  return (
-    <div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card text-center">
-              <img src="assets/images/clothes/topcloth1_show.jpg" />
-              <h4>
-                <b>Top Cloth 1</b>
-              </h4>
-              <button>Try on</button>
-            </div>
+  const renderBottoms = () => {
+    return dataDressing.tabPanes[1].bottoms.map((bottom, index) => {
+      return (
+        <div key={index} className="col-md-4">
+          <div className="card text-center">
+            <img src={bottom.imgSrc_jpg} alt={bottom.imgSrc_jpg} />
+            <h4>
+              <b>{bottom.desc}</b>
+            </h4>
+            <button>Try on</button>
           </div>
         </div>
-      </div>
+      );
+    });
+  };
+
+  return (
+    <div className="container">
+      <div className="row">{renderBottoms()}</div>
     </div>
   );
 }

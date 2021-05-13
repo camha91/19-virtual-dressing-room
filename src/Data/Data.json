@@ -74,7 +74,7 @@
       ]
     },
     {
-      "bottom": [
+      "bottoms": [
         {
           "id": "botcloth_1",
           "type": "botclothes",
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "handbag": [
+      "handbags": [
         {
           "id": "handbag_1",
           "type": "handbags",
@@ -187,8 +187,10 @@
           "imgSrc_jpg": "../assets/images/handbags/handbag3_show.jpg",
           "imgSrc_png": "../assets/images/handbags/handbag3.png"
         }
-      ],
-      "necklace": [
+      ]
+    },
+    {
+      "necklaces": [
         {
           "id": "necklace_1",
           "type": "necklaces",
@@ -216,7 +218,7 @@
       ]
     },
     {
-      "hairStyle": [
+      "hairStyles": [
         {
           "id": "hairstyle_1",
           "type": "hairstyle",
@@ -244,7 +246,7 @@
       ]
     },
     {
-      "background": [
+      "backgrounds": [
         {
           "id": "background_1",
           "type": "background",
