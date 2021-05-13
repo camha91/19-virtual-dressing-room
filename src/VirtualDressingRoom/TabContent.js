@@ -14,27 +14,21 @@ export default function Tab() {
         <DressingTops />
       </div>
       <div className="tab-pane container fade" id="tabBotClothes">
-        tabBotClothes
         <DressingBottoms />
       </div>
       <div className="tab-pane container fade" id="tabShoes">
-        tabShoes
         <DressingShoes />
       </div>
       <div className="tab-pane container fade" id="tabHandBags">
-        tabHandBags
         <DressingHandbags />
       </div>
       <div className="tab-pane container fade" id="tabNecklaces">
-        tabNecklaces
         <DressingNecklaces />
       </div>
       <div className="tab-pane container fade" id="tabHairStyle">
-        tabHairStyle
         <DressingHairStyle />
       </div>
       <div className="tab-pane container fade" id="tabBackground">
-        tabBackground
         <DressingBackground />
       </div>
     </div>

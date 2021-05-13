@@ -8,7 +8,7 @@ export default function CategoryTabs() {
       return (
         <li key={index} className="nav-item">
           <a
-            className="nav-link btn-default"
+            className="nav-link btn-success"
             data-toggle="pill"
             href={tab.tabName}
           >

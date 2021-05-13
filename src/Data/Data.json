@@ -1,21 +1,21 @@
 {
   "navPills": [
-    { "tabName": "tabTopClothes", "showName": "Top", "type": "topclothes" },
-    { "tabName": "tabBotClothes", "showName": "Bottom", "type": "botclothes" },
-    { "tabName": "tabShoes", "showName": "Shoes", "type": "shoes" },
-    { "tabName": "tabHandBags", "showName": "Bags", "type": "handbags" },
+    { "tabName": "#tabTopClothes", "showName": "Top", "type": "topclothes" },
+    { "tabName": "#tabBotClothes", "showName": "Bottom", "type": "botclothes" },
+    { "tabName": "#tabShoes", "showName": "Shoes", "type": "shoes" },
+    { "tabName": "#tabHandBags", "showName": "Bags", "type": "handbags" },
     {
-      "tabName": "tabNecklaces",
+      "tabName": "#tabNecklaces",
       "showName": "Necklaces",
       "type": "necklaces"
     },
     {
-      "tabName": "tabHairStyle",
+      "tabName": "#tabHairStyle",
       "showName": "Hair Style",
       "type": "hairstyle"
     },
     {
-      "tabName": "tabBackground",
+      "tabName": "#tabBackground",
       "showName": "Background",
       "type": "background"
     }
