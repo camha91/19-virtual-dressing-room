@@ -26,8 +26,8 @@ const VirtualDressingRoomReducer = (state = initialState, action) => {
         ...state.currentDressingSet,
         ...action.tryItem,
       };
-      console.log("dressingSetUpdate: ", dressingSetUpdate);
-      console.log("action.tryItem: ", action.tryItem);
+      // console.log("dressingSetUpdate: ", dressingSetUpdate);
+      // console.log("action.tryItem: ", action.tryItem);
 
       state.currentDressingSet = dressingSetUpdate;
 
