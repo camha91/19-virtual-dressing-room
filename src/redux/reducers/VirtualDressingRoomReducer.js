@@ -1,4 +1,9 @@
 const initialState = {
+  currentActiveTab: {
+    tabName: "tabTopClothes",
+    showName: "Top",
+    type: "topClothes",
+  },
   model: [
     {
       hairStyle: "assets/images/hairstyle/hairstyle2.png",
@@ -14,6 +19,11 @@ const initialState = {
 
 const VirtualDressingRoomReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "CHANGE_ACTIVE_TAB": {
+      state.currentActiveTab = action.currentActiveTab;
+      return { ...state };
+    }
+
     default:
       return { ...state };
   }

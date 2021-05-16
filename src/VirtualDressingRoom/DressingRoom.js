@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Model() {
+export default function DressingRoom() {
   return (
     <div className="col-md-4">
       <div class="contain">
