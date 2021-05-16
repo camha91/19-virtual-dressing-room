@@ -1,41 +1,44 @@
 import React from "react";
-import DressingBackground from "./DressingBackground";
-import DressingBottoms from "./DressingBottoms";
-import DressingHairStyle from "./DressingHairStyle";
-import DressingHandbags from "./DressingHandbags";
-import DressingNecklaces from "./DressingNecklaces";
-import DressingShoes from "./DressingShoes";
-import DressingTops from "./DressingTops";
+import { useSelector, useDispatch } from "react-redux";
+import { tryOnAction } from "../redux/Actions/VirtualDressingRoomAction";
 
-export default function Tab() {
+export default function TabContent(props) {
+  const { tabItems } = props;
+
+  const currentActiveTab = useSelector(
+    (state) => state.VirtualDressingRoomReducer.currentActiveTab
+  );
+
+  const dispatch = useDispatch();
+
+  const renderDressingItem = () => {
+    return tabItems.map((tabPaneItem, index) => {
+      if (tabPaneItem.type === currentActiveTab.type) {
+        return (
+          <div key={index} className="col-md-4">
+            <div className="card text-center">
+              <img src={tabPaneItem.imgSrc_jpg} alt={tabPaneItem.name} />
+              <h4>
+                <b>{tabPaneItem.desc}</b>
+              </h4>
+              <button
+                onClick={() => {
+                  dispatch(tryOnAction(tabPaneItem));
+                }}
+              >
+                Try on
+              </button>
+            </div>
+          </div>
+        );
+      }
+    });
+  };
+
   return (
     <div className="tab-content">
-      <div className="tab-pane container active" id="tabTopClothes">
-        <DressingTops />
-      </div>
-      <div className="tab-pane container fade" id="tabBotClothes">
-        tabBotClothes
-        <DressingBottoms />
-      </div>
-      <div className="tab-pane container fade" id="tabShoes">
-        tabShoes
-        <DressingShoes />
-      </div>
-      <div className="tab-pane container fade" id="tabHandBags">
-        tabHandBags
-        <DressingHandbags />
-      </div>
-      <div className="tab-pane container fade" id="tabNecklaces">
-        tabNecklaces
-        <DressingNecklaces />
-      </div>
-      <div className="tab-pane container fade" id="tabHairStyle">
-        tabHairStyle
-        <DressingHairStyle />
-      </div>
-      <div className="tab-pane container fade" id="tabBackground">
-        tabBackground
-        <DressingBackground />
+      <div className="container">
+        <div className="row">{renderDressingItem()}</div>
       </div>
     </div>
   );

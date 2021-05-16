@@ -1,7 +1,7 @@
 {
   "navPills": [
-    { "tabName": "tabTopClothes", "showName": "Top", "type": "topclothes" },
-    { "tabName": "tabBotClothes", "showName": "Bottom", "type": "botclothes" },
+    { "tabName": "tabTopClothes", "showName": "Top", "type": "topClothes" },
+    { "tabName": "tabBotClothes", "showName": "Bottom", "type": "botClothes" },
     { "tabName": "tabShoes", "showName": "Shoes", "type": "shoes" },
     { "tabName": "tabHandBags", "showName": "Bags", "type": "handbags" },
     {
@@ -12,7 +12,7 @@
     {
       "tabName": "tabHairStyle",
       "showName": "Hair Style",
-      "type": "hairstyle"
+      "type": "hairStyle"
     },
     {
       "tabName": "tabBackground",
@@ -22,88 +22,88 @@
   ],
   "tabPanes": [
     {
-      "id": "topcloth_1",
-      "type": "topclothes",
+      "id": "topCloth_1",
+      "type": "topClothes",
       "name": "Top Cloth 1",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth1_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth1.png"
     },
     {
-      "id": "topcloth_2",
-      "type": "topclothes",
+      "id": "topCloth_2",
+      "type": "topClothes",
       "name": "Top Cloth 2",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth2_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth2.png"
     },
     {
-      "id": "topcloth_3",
-      "type": "topclothes",
+      "id": "topCloth_3",
+      "type": "topClothes",
       "name": "Top Cloth 3",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth3_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth3.png"
     },
     {
-      "id": "topcloth_4",
-      "type": "topclothes",
+      "id": "topCloth_4",
+      "type": "topClothes",
       "name": "Top Cloth 4",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth4_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth4.png"
     },
     {
-      "id": "topcloth_5",
-      "type": "topclothes",
+      "id": "topCloth_5",
+      "type": "topClothes",
       "name": "Top Cloth 5",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth5_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth5.png"
     },
     {
-      "id": "topcloth_6",
-      "type": "topclothes",
+      "id": "topCloth_6",
+      "type": "topClothes",
       "name": "Top Cloth ",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/topcloth6_show.jpg",
       "imgSrc_png": "../assets/images/clothes/topcloth6.png"
     },
     {
-      "id": "botcloth_1",
-      "type": "botclothes",
+      "id": "botCloth_1",
+      "type": "botClothes",
       "name": "Bot Cloth 1",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/botcloth1_show.jpg",
       "imgSrc_png": "../assets/images/clothes/botcloth1.png"
     },
     {
-      "id": "botcloth_2",
-      "type": "botclothes",
+      "id": "botCloth_2",
+      "type": "botClothes",
       "name": "Bot Cloth 2",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/botcloth2_show.jpg",
       "imgSrc_png": "../assets/images/clothes/botcloth2.png"
     },
     {
-      "id": "botcloth_3",
-      "type": "botclothes",
+      "id": "botCloth_3",
+      "type": "botClothes",
       "name": "Bot Cloth 3",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/botcloth3_show.jpg",
       "imgSrc_png": "../assets/images/clothes/botcloth3.png"
     },
     {
-      "id": "botcloth_4",
-      "type": "botclothes",
+      "id": "botCloth_4",
+      "type": "botClothes",
       "name": "Bot Cloth 4",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/botcloth4_show.jpg",
       "imgSrc_png": "../assets/images/clothes/botcloth4.png"
     },
     {
-      "id": "botcloth_5",
-      "type": "botclothes",
+      "id": "botCloth_5",
+      "type": "botClothes",
       "name": "Bot Cloth 5",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/clothes/botcloth5_show.jpg",
@@ -198,25 +198,25 @@
       "imgSrc_png": "../assets/images/necklaces/necklace3.png"
     },
     {
-      "id": "hairstyle_1",
-      "type": "hairstyle",
-      "name": "Hairstyle 1",
+      "id": "hairStyle_1",
+      "type": "hairStyle",
+      "name": "HairStyle 1",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle1_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle1.png"
     },
     {
-      "id": "hairstyle_2",
-      "type": "hairstyle",
-      "name": "Hairstyle 2",
+      "id": "hairStyle_2",
+      "type": "hairStyle",
+      "name": "HairStyle 2",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle2_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle2.png"
     },
     {
-      "id": "hairstyle_3",
-      "type": "hairstyle",
-      "name": "Hairstyle 3",
+      "id": "hairStyle_3",
+      "type": "hairStyle",
+      "name": "HairStyle 3",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle3_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle3.png"
