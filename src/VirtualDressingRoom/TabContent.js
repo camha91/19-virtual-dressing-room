@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { tryOnAction } from "../redux/Actions/VirtualDressingRoomAction";
 
 export default function TabContent(props) {
   const { tabItems } = props;
@@ -22,10 +23,7 @@ export default function TabContent(props) {
               </h4>
               <button
                 onClick={() => {
-                  dispatch({
-                    type: "TRY_ON",
-                    tryItem: { [tabPaneItem.type]: tabPaneItem.imgSrc_png },
-                  });
+                  dispatch(tryOnAction(tabPaneItem));
                 }}
               >
                 Try on

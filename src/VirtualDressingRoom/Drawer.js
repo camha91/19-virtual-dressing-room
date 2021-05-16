@@ -1,6 +1,7 @@
 import React from "react";
 import TabContent from "./TabContent";
 import { useDispatch, useSelector } from "react-redux";
+import { changeActiveTabAction } from "../redux/Actions/VirtualDressingRoomAction";
 
 export default function Drawer(props) {
   const { navPills, tabPanes } = props;
@@ -21,12 +22,7 @@ export default function Drawer(props) {
         <li
           key={index}
           className="nav-item"
-          onClick={() =>
-            dispatch({
-              type: "CHANGE_ACTIVE_TAB",
-              currentActiveTab: { ...navItem },
-            })
-          }
+          onClick={() => dispatch(changeActiveTabAction(navItem))}
         >
           <a className={aClassName} data-toggle="pill" href={navItem.tabName}>
             {navItem.showName}
