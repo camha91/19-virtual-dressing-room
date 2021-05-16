@@ -4,17 +4,15 @@ const initialState = {
     showName: "Top",
     type: "topClothes",
   },
-  model: [
-    {
-      hairStyle: "assets/images/hairstyle/hairstyle2.png",
-      necklace: "assets/images/necklaces/necklace1.png",
-      top: "assets/images/clothes/topcloth6.png",
-      bottom: "assets/images/clothes/botcloth2.png",
-      handbag: "assets/images/handbags/handbag2.png",
-      shoes: "assets/images/shoes/shoes1.png",
-      background: "assets/images/background/background5.jpg",
-    },
-  ],
+  currentDressingSet: {
+    hairStyle: "assets/images/hairstyle/hairstyle2.png",
+    necklaces: "assets/images/necklaces/necklace1.png",
+    topClothes: "assets/images/clothes/topcloth6.png",
+    botClothes: "assets/images/clothes/botcloth2.png",
+    handbags: "assets/images/handbags/handbag2.png",
+    shoes: "assets/images/shoes/shoes1.png",
+    background: "assets/images/background/background5.jpg",
+  },
 };
 
 const VirtualDressingRoomReducer = (state = initialState, action) => {
@@ -23,7 +21,18 @@ const VirtualDressingRoomReducer = (state = initialState, action) => {
       state.currentActiveTab = action.currentActiveTab;
       return { ...state };
     }
+    case "TRY_ON": {
+      const dressingSetUpdate = {
+        ...state.currentDressingSet,
+        ...action.tryItem,
+      };
+      console.log("dressingSetUpdate: ", dressingSetUpdate);
+      console.log("action.tryItem: ", action.tryItem);
 
+      state.currentDressingSet = dressingSetUpdate;
+
+      return { ...state };
+    }
     default:
       return { ...state };
   }

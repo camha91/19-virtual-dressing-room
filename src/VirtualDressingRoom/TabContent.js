@@ -20,7 +20,16 @@ export default function TabContent(props) {
               <h4>
                 <b>{tabPaneItem.desc}</b>
               </h4>
-              <button onClick={() => {}}>Try on</button>
+              <button
+                onClick={() => {
+                  dispatch({
+                    type: "TRY_ON",
+                    tryItem: { [tabPaneItem.type]: tabPaneItem.imgSrc_png },
+                  });
+                }}
+              >
+                Try on
+              </button>
             </div>
           </div>
         );

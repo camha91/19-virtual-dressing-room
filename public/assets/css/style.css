@@ -48,24 +48,26 @@
   top: 12%;
   left: 22%;
 }
-.bikinitop {
-  width: 250px;
+.topWear {
+  width: 500px;
   height: 500px;
   background: url("./../images/allbody/bikini_branew.png");
   position: absolute;
-  top: 12%;
-  left: 22%;
-  z-index: 1;
+  top: -9%;
+  left: -5%;
+  transform: scale(0.5);
+  z-Index: 3;
 }
 
-.bikinibottom {
-  width: 250px;
-  height: 500px;
+.botWear {
+  width: 500px;
+  height: 1000px;
   background: url("./../images/allbody/bikini_pantsnew.png");
   position: absolute;
-  top: 12%;
-  left: 22%;
-  z-index: 1;
+  top: -30%;
+  left: -5%;
+  transform: scale(0.5);
+  z-Index: 2;
 }
 
 .model {

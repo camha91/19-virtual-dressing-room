@@ -12,7 +12,7 @@
     {
       "tabName": "tabHairStyle",
       "showName": "Hair Style",
-      "type": "hairstyle"
+      "type": "hairStyle"
     },
     {
       "tabName": "tabBackground",
@@ -198,25 +198,25 @@
       "imgSrc_png": "../assets/images/necklaces/necklace3.png"
     },
     {
-      "id": "hairstyle_1",
-      "type": "hairstyle",
-      "name": "Hairstyle 1",
+      "id": "hairStyle_1",
+      "type": "hairStyle",
+      "name": "HairStyle 1",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle1_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle1.png"
     },
     {
-      "id": "hairstyle_2",
-      "type": "hairstyle",
-      "name": "Hairstyle 2",
+      "id": "hairStyle_2",
+      "type": "hairStyle",
+      "name": "HairStyle 2",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle2_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle2.png"
     },
     {
-      "id": "hairstyle_3",
-      "type": "hairstyle",
-      "name": "Hairstyle 3",
+      "id": "hairStyle_3",
+      "type": "hairStyle",
+      "name": "HairStyle 3",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
       "imgSrc_jpg": "../assets/images/hairstyle/hairstyle3_show.jpg",
       "imgSrc_png": "../assets/images/hairstyle/hairstyle3.png"

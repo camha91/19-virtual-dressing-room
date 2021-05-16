@@ -1,93 +1,53 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function DressingRoom() {
+  const currentDressingRoomSet = useSelector((state) => {
+    return state.VirtualDressingRoomReducer.currentDressingSet;
+  });
+
   return (
     <div className="col-md-4">
-      <div class="contain">
-        <div class="body"></div>
-        <div class="model"></div>
+      <div className="contain">
+        <div className="body"></div>
+        <div className="model"></div>
+
         <div
-          class="hairstyle"
+          className="hairstyle"
           style={{
-            width: "1000px",
-            height: "1000px",
-            background: 'url("assets/images/hairstyle/hairstyle2.png")',
-            position: "absolute",
-            top: "-75%",
-            right: "-57%",
-            transform: "scale(0.15)",
-            zIndex: "4",
+            backgroundImage: `url(${currentDressingRoomSet.hairStyle})`,
           }}
         ></div>
         <div
-          class="necklace"
+          className="necklace"
           style={{
-            width: "500px",
-            height: "1000px",
-            background: 'url("assets/images/necklaces/necklace1.png")',
-            position: "absolute",
-            bottom: "-40%",
-            right: "-3.5%",
-            transform: "scale(0.5)",
-            zIndex: "4",
+            backgroundImage: `url(${currentDressingRoomSet.necklaces})`,
           }}
         ></div>
         <div
-          class="bikinitop"
+          className="topWear"
           style={{
-            width: "500px",
-            height: "500px",
-            background: 'url("assets/images/clothes/topcloth6.png")',
-            position: "absolute",
-            top: "-9%",
-            left: "-5%",
-            transform: "scale(0.5)",
-            zIndex: "3",
+            backgroundImage: `url(${currentDressingRoomSet.topClothes})`,
           }}
         ></div>
         <div
-          class="bikinibottom"
+          className="botWear"
           style={{
-            width: "500px",
-            height: "1000px",
-            background: 'url("assets/images/clothes/botcloth2.png")',
-            position: "absolute",
-            top: "-30%",
-            left: "-5%",
-            transform: "scale(0.5)",
-            zIndex: "2",
+            backgroundImage: `url(${currentDressingRoomSet.botClothes})`,
           }}
         ></div>
         <div
-          class="handbag"
-          style={{
-            width: "500px",
-            height: "1000px",
-            background: 'url("assets/images/handbags/handbag2.png")',
-            position: "absolute",
-            bottom: "-40%",
-            right: "-3.5%",
-            transform: "scale(0.5)",
-            zIndex: "4",
-          }}
+          className="handbag"
+          style={{ backgroundImage: `url(${currentDressingRoomSet.handbags})` }}
         ></div>
         <div
-          class="feet"
-          style={{
-            width: "500px",
-            height: "1000px",
-            background: 'url("assets/images/shoes/shoes1.png")',
-            position: "absolute",
-            bottom: "-37%",
-            right: "-3.5%",
-            transform: "scale(0.5)",
-            zIndex: "1",
-          }}
+          className="feet"
+          style={{ backgroundImage: `url(${currentDressingRoomSet.shoes})` }}
         ></div>
         <div
-          class="background"
+          className="background"
           style={{
-            backgroundImage: 'url("assets/images/background/background5.jpg")',
+            backgroundImage: `url(${currentDressingRoomSet.background})`,
           }}
         ></div>
       </div>
