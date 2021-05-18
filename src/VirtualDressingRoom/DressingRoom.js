@@ -1,56 +1,51 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useSelector } from "react-redux";
 
+let getRef;
+
 export default function DressingRoom() {
-  const currentDressingRoomSet = useSelector((state) => {
-    return state.VirtualDressingRoomReducer.currentDressingSet;
-  });
+    const currentDressingRoomSet = useSelector((state) => {
+        return state.VirtualDressingRoomReducer.currentDressingSet;
+    });
+    const currentActiveTab = useSelector((state) => {
+        return state.VirtualDressingRoomReducer.currentActiveTab;
+    });
 
-  return (
-    <div className="col-md-4">
-      <div className="contain">
-        <div className="body"></div>
-        <div className="model"></div>
+    const changeRef = useRef();
 
-        <div
-          className="hairstyle"
-          style={{
-            backgroundImage: `url(${currentDressingRoomSet.hairStyle})`,
-          }}
-        ></div>
-        <div
-          className="necklace"
-          style={{
-            backgroundImage: `url(${currentDressingRoomSet.necklaces})`,
-          }}
-        ></div>
-        <div
-          className="topWear"
-          style={{
-            backgroundImage: `url(${currentDressingRoomSet.topClothes})`,
-          }}
-        ></div>
-        <div
-          className="botWear"
-          style={{
-            backgroundImage: `url(${currentDressingRoomSet.botClothes})`,
-          }}
-        ></div>
-        <div
-          className="handbag"
-          style={{ backgroundImage: `url(${currentDressingRoomSet.handbags})` }}
-        ></div>
-        <div
-          className="feet"
-          style={{ backgroundImage: `url(${currentDressingRoomSet.shoes})` }}
-        ></div>
-        <div
-          className="background"
-          style={{
-            backgroundImage: `url(${currentDressingRoomSet.background})`,
-          }}
-        ></div>
-      </div>
-    </div>
-  );
+    getRef = changeRef;
+
+    return (
+        <div className="col-md-4">
+            <div className="contain">
+                <div className="body"></div>
+                <div className="model"></div>
+
+                {Object.keys(currentDressingRoomSet).map((k, index) => {
+                    const v = currentDressingRoomSet[k];
+                    if (k === currentActiveTab.type) {
+                        return (
+                            <div
+                                ref={changeRef}
+                                className={k}
+                                style={{ backgroundImage: `url(${v})` }}
+                                key={index}
+                            ></div>
+                        );
+                    }
+                    return (
+                        <div
+                            className={k}
+                            style={{ backgroundImage: `url(${v})` }}
+                            key={index}
+                        ></div>
+                    );
+                })}
+            </div>
+        </div>
+    );
 }
+
+export const getCurrentRef = () => {
+    return getRef.current;
+};

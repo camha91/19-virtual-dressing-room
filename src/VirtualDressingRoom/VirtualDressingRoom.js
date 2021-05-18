@@ -7,14 +7,14 @@ import Banner from "./Banner";
 const { navPills, tabPanes } = data;
 
 export default function VirtualDressingRoom() {
-  return (
-    <div className="container-fluid">
-      <Banner />
-      <hr />
-      <div className="row">
-        <Drawer navPills={navPills} tabPanes={tabPanes} />
-        <DressingRoom />
-      </div>
-    </div>
-  );
+    return (
+        <div className="container-fluid">
+            <Banner />
+            <hr />
+            <div className="row">
+                <Drawer navPills={navPills} tabPanes={tabPanes} />
+                <DressingRoom />
+            </div>
+        </div>
+    );
 }

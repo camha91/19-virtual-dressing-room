@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import VirtualDressingRoomReducer from "./VirtualDressingRoomReducer";
 
 const rootReducer = combineReducers({
-  VirtualDressingRoomReducer,
+    VirtualDressingRoomReducer,
 });
 
 export default rootReducer;

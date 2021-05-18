@@ -48,7 +48,7 @@
   top: 12%;
   left: 22%;
 }
-.topWear {
+.topClothes {
   width: 500px;
   height: 500px;
   background: url("./../images/allbody/bikini_branew.png");
@@ -59,15 +59,15 @@
   z-Index: 3;
 }
 
-.botWear {
+.botClothes {
   width: 500px;
   height: 1000px;
   background: url("./../images/allbody/bikini_pantsnew.png");
   position: absolute;
-  top: -30%;
+  top: -31%;
   left: -5%;
   transform: scale(0.5);
-  z-Index: 2;
+  z-Index: 3;
 }
 
 .model {
@@ -80,7 +80,7 @@
   z-index: 1;
 }
 
-.handbag {
+.handbags {
   width: 500px;
   height: 1000px;
   position: absolute;
@@ -90,7 +90,7 @@
   z-index: 4;
 }
 
-.necklace {
+.necklaces {
   width: 500px;
   height: 1000px;
   position: absolute;
@@ -100,7 +100,7 @@
   z-index: 4;
 }
 
-.hairstyle {
+.hairStyle {
   width: 1000px;
   height: 1000px;
   position: absolute;
@@ -110,7 +110,7 @@
   z-index: 4;
 }
 
-.feet {
+.shoes {
   width: 500px;
   height: 1000px;
   background: url("./../images/shoes/shoes1.png");
