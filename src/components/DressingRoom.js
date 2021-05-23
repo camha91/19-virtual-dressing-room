@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useSelector } from "react-redux";
 
-let getRef;
+let roomChangingItemRef;
 
 export default function DressingRoom() {
     const currentDressingRoomSet = useSelector((state) => {
@@ -13,7 +13,7 @@ export default function DressingRoom() {
 
     const changeRef = useRef();
 
-    getRef = changeRef;
+    roomChangingItemRef = changeRef;
 
     return (
         <div className="col-md-4">
@@ -22,6 +22,7 @@ export default function DressingRoom() {
                 <div className="model"></div>
 
                 {Object.keys(currentDressingRoomSet).map((k, index) => {
+                    // Get the keys from the currentDressingRoomSet then map each key
                     const v = currentDressingRoomSet[k];
                     if (k === currentActiveTab.type) {
                         return (
@@ -46,6 +47,6 @@ export default function DressingRoom() {
     );
 }
 
-export const getCurrentRef = () => {
-    return getRef.current;
+export const getRoomChangingItemRef = () => {
+    return roomChangingItemRef.current;
 };

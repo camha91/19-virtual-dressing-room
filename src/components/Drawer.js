@@ -1,7 +1,7 @@
 import React from "react";
 import TabContent from "./TabContent";
 import { useDispatch, useSelector } from "react-redux";
-import { changeActiveTabAction } from "../redux/Actions/VirtualDressingRoomAction";
+import { changeActiveTabAction } from "../redux/actions/VirtualDressingRoomAction";
 
 export default function Drawer(props) {
     const { navPills, tabPanes } = props;

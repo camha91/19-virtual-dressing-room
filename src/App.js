@@ -1,4 +1,4 @@
-import VirtualDressingRoom from "./VirtualDressingRoom/VirtualDressingRoom";
+import VirtualDressingRoom from "./components/VirtualDressingRoom";
 
 function App() {
     return (
