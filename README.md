@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Project View
 
-[!project photo](dressing_room.png)
+![project photo](dressing_room.png)
