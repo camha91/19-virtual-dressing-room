@@ -6,7 +6,7 @@ export default function Banner() {
             <div className="col-4 text-right">
                 <img
                     style={{ width: "180px" }}
-                    src="images/fashionLogo.png"
+                    src="./img/fashionLogo.png"
                     alt="Card"
                 />
             </div>

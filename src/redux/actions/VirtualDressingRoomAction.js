@@ -10,5 +10,5 @@ export const changeActiveTabAction = (navItem) => ({
 
 export const tryOnAction = (changeItem) => ({
     type: TRY_ON,
-    tryItem: changeItem[0].dispatchData,
+    tryItem: changeItem,
 });

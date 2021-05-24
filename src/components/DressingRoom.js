@@ -18,8 +18,18 @@ export default function DressingRoom() {
     return (
         <div className="col-md-4">
             <div className="contain">
-                <div className="body"></div>
-                <div className="model"></div>
+                <div
+                    className="body"
+                    style={{
+                        backgroundImage: "url(./img/allbody/bodynew.png)",
+                    }}
+                ></div>
+                <div
+                    className="model"
+                    style={{
+                        backgroundImage: "url(./img/model/1000new.png)",
+                    }}
+                ></div>
 
                 {Object.keys(currentDressingRoomSet).map((k, index) => {
                     // Get the keys from the currentDressingRoomSet then map each key

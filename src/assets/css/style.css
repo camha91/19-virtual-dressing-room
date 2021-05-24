@@ -43,7 +43,7 @@
 .body {
   width: 250px;
   height: 500px;
-  background: url("./../images/allbody/bodynew.png");
+  /* background: url("./img/allbody/bodynew.png"); */
   position: absolute;
   top: 12%;
   left: 22%;
@@ -51,7 +51,7 @@
 .topClothes {
   width: 500px;
   height: 500px;
-  background: url("./../images/allbody/bikini_branew.png");
+  /* background: url("img/allbody/bikini_branew.png"); */
   position: absolute;
   top: -9%;
   left: -5%;
@@ -62,7 +62,7 @@
 .botClothes {
   width: 500px;
   height: 1000px;
-  background: url("./../images/allbody/bikini_pantsnew.png");
+  /* background: url("img/allbody/bikini_pantsnew.png"); */
   position: absolute;
   top: -31%;
   left: -5%;
@@ -73,7 +73,7 @@
 .model {
   width: 60px;
   height: 77px;
-  background: url("./../images/model/1000new.png");
+  /* background: url("img/model/1000new.png"); */
   position: absolute;
   top: 5%;
   left: 45.5%;
@@ -113,7 +113,7 @@
 .shoes {
   width: 500px;
   height: 1000px;
-  background: url("./../images/shoes/shoes1.png");
+  /* background: url("img/shoes/shoes1.png"); */
   position: absolute;
   bottom: -37%;
   right: -3.5%;
@@ -124,7 +124,7 @@
 .background {
   width: 900px;
   height: 1500px;
-  background-image: url(./../images/background/background1.jpg);
+  /* background-image: url(img/background/background1.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;

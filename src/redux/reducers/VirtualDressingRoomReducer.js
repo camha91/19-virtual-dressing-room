@@ -7,11 +7,11 @@ const initialState = {
     currentDressingSet: {
         hairStyle: "img/hairstyle/hairstyle2.png",
         necklaces: "img/necklaces/necklace1.png",
-        topClothes: "img/clothes/topcloth6.png",
+        topClothes: "img/clothes/topcloth3.png",
         botClothes: "img/clothes/botcloth2.png",
         handbags: "img/handbags/handbag2.png",
         shoes: "img/shoes/shoes1.png",
-        background: "img/background/background5.jpg",
+        background: "img/background/background3.jpg",
     },
 };
 
