@@ -4,7 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Description
 
-This project using redux to render items accordingly to that tab. When button tryon is clicked, the item will move to dressing room to replace the previous item on model using animation spring.
+-   The user can try on different clothes virtually by clicking the try-on button.
+-   After the try-on button is clicked, the item will move across the web page from the drawer to be fitted on the model in the dressing room.
+
+## Features
+
+-   Written in modern React, only functional components with hooks.
+-   Used state management Redux.
+-   Used React Spring for animation.
 
 ## Available Scripts
 
