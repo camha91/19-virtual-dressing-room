@@ -11,7 +11,7 @@ allow users to visually see their chosen items on the model.
 
 ## Project Demo
 
-Click to view demo (19-virtual-dressing-room.vercel.app)
+[Click to view demo] (19-virtual-dressing-room.vercel.app)
 
 ## Technologies
 
